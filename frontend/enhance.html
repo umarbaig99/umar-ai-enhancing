@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umar Web | Enhance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="enhance-page">
+
+  <!-- Header -->
+   
+  <header class="header enhance-header">
+    <div class="logo">Umar<span>Web</span></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="#">History</a>
+      <a href="#">Profile</a>
+    </nav>
+  </header>
+
+  <!-- Main Workspace -->
+  <main class="workspace">
+    <!-- Left: Image preview -->
+    <section class="preview-section">
+      <h2>Your Image</h2>
+     <div class="image-compare-container" id="compareContainer">
+  <img id="beforeImage" class="before" alt="Before" />
+  <img id="afterImage" class="after" alt="After" />
+  <div id="compareSlider" class="compare-slider">
+    <div class="slider-circle"></div>
+  </div>
+</div>
+
+    </section>
+
+    <!-- Right: Enhancement tools -->
+<section class="tools-section">
+  <h2>Enhancement Options</h2>
+
+  <div class="tool-buttons">
+    <button class="action-btn" id="enhanceBtn">✨ Enhance</button>
+    <button class="action-btn" id="sharpenBtn">🔍 Sharpen</button>
+    <button class="action-btn" id="colorizeBtn">🎨 Colorize</button>
+    <button class="action-btn" id="restoreBtn">🧩 Restore</button>
+  </div>
+
+  <h3 style="margin-top:30px;text-align:center;">View Controls</h3>
+  <div class="view-controls">
+    <button class="action-btn secondary" id="zoomInBtn">🔎 Zoom In</button>
+    <button class="action-btn secondary" id="zoomOutBtn">➖ Zoom Out</button>
+    <button class="action-btn secondary" id="resetBtn">♻ Reset</button>
+  </div>
+
+  <div class="download-section">
+    <button class="action-btn primary" id="downloadBtn">⬇ Download Enhanced</button>
+  </div>
+  <!-- ======= PROGRESS BAR ======= -->
+<div class="progress-bar" id="progressBar">
+  <div class="progress-fill" id="progressFill"></div>
+</div>
+
+</section>
+
+  </main>
+
+  <!-- Loader Overlay -->
+  <div id="loader" class="loader">
+    <div class="spinner"></div>
+    <p>Enhancing your photo with AI...</p>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 Umar AI Labs — All Rights Reserved</p>
+  </footer>
+
+  <script src="enhance.js"></script>
+</body>
+</html>
